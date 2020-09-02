@@ -1,3 +1,7 @@
+/* ---------------------------- */
+/* BACIS SETUP
+/* ---------------------------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,17 +16,14 @@ html {
   font-size: 20px;
   text-rendering: optimizeLegibility;
 }
+
+/* ---------------------------- */
+/* REUSEABLE COMPONENT
+/* ---------------------------- */
+
 .row {
   max-width: 1140px;
   margin: 0 auto;
-}
-
-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.692)),
-    url(img/hero.jpg);
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
 }
 
 h1 {
@@ -36,12 +37,7 @@ h1 {
   word-spacing: 10px;
 }
 
-.hero-text-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+/* --------BUTTON---------- */
 
 .btn:link,
 .btn:visited {
@@ -81,4 +77,55 @@ btn-ghost:visited {
 .btn-ghost:active {
   color: #fff;
   border: 1px solid #cf6d17;
+}
+
+/* ---------------------------- */
+/* HEDDING
+/* ---------------------------- */
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.692)),
+    url(img/hero.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.hero-text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+}
+
+.main-nav {
+  float: right;
+  margin-top: 55px;
+}
+
+.main-nav li {
+  list-style: none;
+  margin-left: 40px;
+  display: inline-block;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding-bottom: 8px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition:border-bottom 0.2s;
+}
+
+.main-nav li a:hover {
+  border-bottom:2px solid #e67e22 ;
 }
