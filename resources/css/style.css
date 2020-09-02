@@ -178,3 +178,26 @@ header {
 .main-nav li a:hover {
   border-bottom: 2px solid #e67e22;
 }
+
+/* --------MEALS---------- */
+
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.meals-showcase li {
+  display: block;
+  width: 25%;
+  float: left;
+}
+
+.meals-photo {
+  width: 100%;
+  margin:0;
+}
+
+.meals-photo img{
+    width: 100%;
+    height: auto;
+}
