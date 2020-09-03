@@ -17,6 +17,14 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+.clearfix{zoom: 1;}
+.clearfix:after{
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
 /* ---------------------------- */
 /* REUSEABLE COMPONENT
 /* ---------------------------- */
@@ -179,10 +187,9 @@ header {
   border-bottom: 2px solid #e67e22;
 }
 /* --------FEATURE---------- */
-.section-feature .long-copy{
-    margin-bottom: 30px;
+.section-feature .long-copy {
+  margin-bottom: 30px;
 }
-
 
 /* --------MEALS---------- */
 
@@ -218,4 +225,48 @@ header {
 .meals-photo img:hover {
   opacity: 1;
   transform: scale(1.03);
+}
+
+/* --------HOW-IT-WORK---------- */
+.section-work{
+  background-color: #f4f4f4;
+}
+.step-box:first-child {
+  text-align: right;
+  padding: right 3%;
+  padding-top: 30px;
+}
+
+.step-box:last-child {
+  padding-left: 3%;
+  padding-top: 70px;
+}
+
+.app-screen {
+  width: 40%;
+}
+.work-step {
+  margin-bottom: 30px;
+}
+.work-step:last-of-type {
+  margin-bottom: 70px;
+}
+.work-step div {
+  display: inline-block;
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  font-size: 150%;
+  margin-right: 25px;
+}
+
+.btn-app img{
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
 }
