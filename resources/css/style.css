@@ -17,9 +17,11 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-.clearfix{zoom: 1;}
-.clearfix:after{
-  content: '.';
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: ".";
   clear: both;
   display: block;
   height: 0;
@@ -55,6 +57,33 @@ section {
   color: #e67e22;
   display: block;
   margin-bottom: 10px;
+}
+
+.icon-small {
+  color: #e67e22;
+  width: 30px;
+  display: inline-block;
+  text-align: center;
+  font-size: 120%;
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-right: 10px;
+}
+/* --------LINK---------- */
+a:link,
+a:visited {
+  color: #e67e22;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #e67e22;
+  transition: border-bottom 0.2s,color 0.2s;
+}
+
+a:hover,
+a:active{
+color: #555;
+border-bottom:  1px solid transparent;
 }
 
 /* --------BUTTON---------- */
@@ -97,6 +126,11 @@ btn-ghost:visited {
 .btn-ghost:active {
   color: #fff;
   border: 1px solid #cf6d17;
+}
+
+.btn-app:link,
+.btn-add:visited{
+  border: 0;
 }
 
 /* ---------------------------- */
@@ -228,7 +262,7 @@ header {
 }
 
 /* --------HOW-IT-WORK---------- */
-.section-work{
+.section-work {
   background-color: #f4f4f4;
 }
 .step-box:first-child {
@@ -265,8 +299,19 @@ header {
   margin-right: 25px;
 }
 
-.btn-app img{
+.btn-app img {
   height: 50px;
   width: auto;
   margin-right: 10px;
+}
+/* --------CITIE---------- */
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.citie-feature {
+  margin-bottom: 5px;
 }
