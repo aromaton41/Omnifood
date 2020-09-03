@@ -77,13 +77,13 @@ a:visited {
   text-decoration: none;
   padding-bottom: 2px;
   border-bottom: 1px solid #e67e22;
-  transition: border-bottom 0.2s,color 0.2s;
+  transition: border-bottom 0.2s, color 0.2s;
 }
 
 a:hover,
-a:active{
-color: #555;
-border-bottom:  1px solid transparent;
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
 }
 
 /* --------BUTTON---------- */
@@ -129,7 +129,7 @@ btn-ghost:visited {
 }
 
 .btn-app:link,
-.btn-add:visited{
+.btn-add:visited {
   border: 0;
 }
 
@@ -180,6 +180,7 @@ header {
   height: 100vh;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 .hero-text-box {
   position: absolute;
@@ -314,4 +315,44 @@ header {
 
 .citie-feature {
   margin-bottom: 5px;
+}
+
+/* --------CITIE---------- */
+
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(img/back-customers.jpg);
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+}
+
+blockquote:before {
+  font-size: 500%;
+  content: "\201C";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+cite {
+  display: block;
+  margin-top: 25px;
+  font-size: 90%;
+}
+
+cite img {
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
 }
